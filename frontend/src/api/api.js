@@ -1,10 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://mern-task-manager-73nz.onrender.com/api", // Your Render backend URL
+  baseURL: "/api",
   headers: {
-    "Content-Type": "application/json",
-  },
+    "Content-Type": "application/json"
+  }
 });
 
 export default api;

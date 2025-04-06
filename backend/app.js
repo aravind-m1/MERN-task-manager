@@ -12,7 +12,12 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+const cors = require("cors");
+
+app.use(cors({
+  origin: ["https://merntaskmanager.vercel.app"],
+  credentials: true
+}));
 
 // MongoDB Connection
 const mongoUrl = process.env.MONGODB_URL;
