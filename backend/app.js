@@ -38,12 +38,12 @@ app.use("/api/tasks", taskRoutes);
 app.use("/api/profile", profileRoutes);
 
 // Serve static assets in production
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.resolve(__dirname, "../frontend/build")));
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"))
-  );
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.resolve(__dirname, "../frontend/build")));
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(__dirname, "../frontend/build/index.html"))
+//   );
+// }
 
 // Start server
 const port = process.env.PORT || 5000;
