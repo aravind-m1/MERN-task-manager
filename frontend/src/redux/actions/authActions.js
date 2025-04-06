@@ -45,3 +45,5 @@ export const logout = () => (dispatch) => {
   dispatch({ type: LOGOUT });
   document.location.href = '/';
 }
+
+const { data } = await api.post('/auth/login', { email, password });
