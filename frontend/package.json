@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "proxy": "https://mern-task-manager-73nz.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
